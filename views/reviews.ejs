@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+<h1>All Reviews</h1>
+
+<% if (locals.reviews.length > 0) { %>
+  <% reviews.forEach(r => { %>
+    <div>
+      <h2><%= r.postTitle %></h2>
+      <p><strong><%= r.userName %></strong> — <%= r.formattedDate %></p>
+      <p><strong>Book:</strong> <%= r.bookName %> / <%= r.genre %></p>
+      <p><%= r.review %></p>
+    </div>
+    <hr>
+  <% }) %>
+<% } else { %>
+  <p>No reviews yet.</p>
+<% } %>
+
+<a href="/">Back to Home</a>
+<%- include("partials/footer") %>

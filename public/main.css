@@ -1,0 +1,44 @@
+
+        .container {
+        max-width: 800px;  /* control how wide it can get */
+        margin: 0 auto;    /* center horizontally */
+        padding: 20px;     /* spacing inside */
+        }
+
+        .about-header {
+        text-align: center; 
+        margin-bottom: 20px;
+        }
+
+        .about {
+        line-height: 1.6;
+        font-size: 1.1rem;
+        text-align: justify; /* optional: makes long text look neat */
+        }
+
+        .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        text-align: center;
+        }
+        .form-container {
+        max-width: 600px;   /* limit width */
+        margin: 40px auto;  /* center horizontally + space from top */
+        padding: 20px;
+        background: #f9f9f9; /* light background */
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .form-group,
+        .form-check {
+        margin-bottom: 15px;
+        }
+
+        .form-control,
+        textarea {
+        width: 100%;  /* inputs take full container width */
+        }

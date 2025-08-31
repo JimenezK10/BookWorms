@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs") %>
+<h1 style="text-align: center; margin-top: 20px;">Edit Review</h1>
+
+<div class="form-container">
+  <form method="POST" action="/reviews/update">
+    <input type="hidden" name="id" value="<%= review.id %>">
+
+    <div class="form-group">
+      <label for="review">Edit Your Review</label>
+      <textarea class="form-control" id="review" name="review" rows="5"><%= review.review %></textarea>
+    </div>
+    
+    <div class="form-group">
+      <input type="text" class="form-control" id="postTitle" name="postTitle" value="<%= review.postTitle %>"> 
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="bookName" name="bookName" value="<%= review.bookName %>">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="genre" name="genre" value="<%= review.genre %>">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="userName" name="userName" value="<%= review.userName %>">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a href="/reviews" class="btn btn-light">Cancel</a>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
