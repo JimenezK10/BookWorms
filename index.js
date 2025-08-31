@@ -1,6 +1,6 @@
 import express from "express";
 import morgan from "morgan";
-// Fix Edit, not able to create new name for edit of post
+// Fix Edit, not able to create new name for edit of post -- Fixed
 const app = express();
 const port = 3000;
 
@@ -24,9 +24,9 @@ app.get("/myreviews", (req, res) => {
     res.render("myreviews.ejs", {reviews});
 })
 app.post("/upost", (req, res) => {
-  const { postTitle, review, bookName, genre, userName } = req.body; // <-- yourName
+  const { postTitle, review, bookName, genre, userName } = req.body; 
   const formattedDate = new Date().toLocaleDateString("en-US");
-  const id = Date.now().toString(); // unique enough for this app
+  const id = Date.now().toString(); 
 
   const newReview = { id, postTitle, review, bookName, genre, userName, formattedDate };
   reviews.push(newReview);
