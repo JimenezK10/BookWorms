@@ -1,6 +1,11 @@
 import express from "express";
 import morgan from "morgan";
+<<<<<<< HEAD
 // Fix Edit, not able to create new name for edit of post -- Fixed
+=======
+// Fix Edit, not able to create new name for edit of post
+// Checking for change
+>>>>>>> edits
 const app = express();
 const port = 3000;
 
